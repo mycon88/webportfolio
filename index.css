@@ -1,0 +1,82 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Manrope', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+a:link {	
+	background-color: transparent;
+	text-decoration: none;
+}
+#about-me ~ p{
+	text-justify: auto;
+}
+#navbar li{
+
+	list-style: none;
+	padding-left: 10px;
+	font-weight: bolder;
+	}
+
+#landing {
+	background-image: url(./images/feather.jpg);
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+}
+
+}
+
+#profile {
+	border-radius: 4px;
+}
+
+#title-projects {
+	text-align: center;
+}
+#title-tools {
+	text-align: center;
+}
+
+#link {
+	text-align: center;
+}
+
+#form {
+	text-align: center;
+	margin: 2px;
+	padding: 2px;
+}
+button {
+	color: blue;
+	background-color: transparent;
+	border: none;
+
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+.navbar #myLinks {
+  display: none;
+}
+.navbar a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.navbar a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
