@@ -8,7 +8,7 @@
 	<!-- Google Font Linking -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Glegoo&family=Manrope:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 		
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -19,7 +19,7 @@
 	<!-- Navigator Bar -->
 	<header id="navbar">
 		
-			<ul class="bg-dark d-flex flex-row justify-content-end p-3 mx-1">
+			<ul class="d-flex flex-row justify-content-end p-3 mx-1">
 				<li class="mx-3"><a href="#landing">Home</a></li>
 				<li class="mx-3"><a href="#about-me">About Me</a></li>
 				<li class="mx-3"><a href="#projects">Projects</a></li>
@@ -47,50 +47,55 @@
 
 
 	<!-- About ME -->
-		<div class="d-flex flex-column text-center mt-5 pb-5">	
-				<div class="col-12 col-md-12">
-					<h2 id="about-me"><u>About Me</u></h2>
+		<div class="d-flex flex-row pt-5 text-center">
+				<div class="d-none d-lg-block d-md-none">
+					<img src="./images/about-me.webp">
 				</div>
-				<div class="col-12 col-md-12 pt-3 m-3">
-					<p>I am a skilled web developer and have a strong background in web development, a strong skill as both a front-end and back-end. I build, design, and maintain all websites and software applications. My skills include designs, writes, and edits website content, understands UI, cross-browser compatibly, and general web functions and standards, HTML, CSS, JavaScript, ReactJS, NodeJS, PHP, and MySQL. I am also familiar with popular frameworks such as Bootstrap.</p>	
+				<div class="flex-column col-lg-6 pt-5 col-12 col-md-12 m-4">
+					<div class="">
+						<h2 id="about-me">About Me</h2>
+					</div>
+					<div class="">
+						<p>I am a skilled web developer and have a strong background in web development, a strong skill as both a front-end and back-end. I build, design, and maintain all websites and software applications. My skills include designs, writes, and edits website content, understands UI, cross-browser compatibly, and general web functions and standards, HTML, CSS, JavaScript, ReactJS, NodeJS, PHP, and MySQL. I am also familiar with popular frameworks such as Bootstrap.</p>	
+					</div>
 				</div>
 			</div>				
 		</div>
 
 		<!-- Projects -->
 		
-			<div id="title-projects" class="p-5"><h2><u>My Projects</u></h2></div>
+			<div id="title-projects" class="p-5 text-center"><h2>My Projects</h2></div>
 			
 		<div id="projects" class="d-flex row text-center">
-				<div class="d-flex flex-column col-lg-4 justify-content-center">				
-					<div class="d-flex justify-content-center align-items-center">
+				<div class="border border-dark d-flex flex-column col-lg-4">				
+					<div class="d-flex justify-content-center align-items-center mt-4">
 						<h4>Web-page Designing (Front-End Programming)</h4>
 					</div>
 					<div class="d-flex justify-content-center">
-						<img src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" height="400" width="400" class="img-fluid">
+						<img id="img-projects" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" height="400" width="400" class="img-fluid">
 					</div>
 					<div class="d-flex justify-content-center">
 						<p>Ceating a websites and pages to reflect a company’s brand and information and ensure a user-friendly experience. Maintaining appearance and design of websites, mobile apps and web pages.Inline with this we can help business to improve their brand, their message, and their bottom line.</p>
 					</div>
 				</div>
 
-				<div class="d-flex flex-column col-lg-4 justify-content-center">
-					<div class="d-flex justify-content-center">
+				<div class="border border-dark d-flex flex-column col-lg-4">
+					<div class="d-flex justify-content-center mt-4">
 						<h4>E-Commerce (Back-End Programming)</h4>
 					</div>
 					<div class="d-flex justify-content-center">
-						<img src="https://img.freepik.com/premium-vector/abstract-modern-ecommerce-logo-design-colorful-gradient-happy-shopping-logo-template_467913-990.jpg" class="img-fluid" height="200" width="200">
+						<img id="img-projects" src="https://img.freepik.com/premium-vector/abstract-modern-ecommerce-logo-design-colorful-gradient-happy-shopping-logo-template_467913-990.jpg" class="img-fluid" height="200" width="200">
 					</div>
 					<div class="d-flex justify-content-center">
 						<p>As an e-commerce we ensure a high availability and uptime. Inline with this we also can offer overcoming technical debt, deal with integration challenges, maintaining ecommerce backend for success, perform monitoring tools, regular update and patches, and disaster recovery and backup strategies.</p>
 					</div>
 				</div>
-					<div class="d-flex flex-column col-lg-4 justify-content-center">
-						<div class="d-flex justify-content-center align-items-center">
+					<div class="border border-dark d-flex flex-column col-lg-4 justify-content-center">
+						<div class="d-flex justify-content-center align-items-center mt-4">
 							<h4>E-Commerce API (Full-Stack)</h4>
 						</div>
 						<div class="d-flex justify-content-center align-items-center">
-							<img src="https://miro.medium.com/v2/resize:fit:1400/1*ZxDLf4f2JZaRjQfPl_9COQ.png" height="400" width="400" class="img-fluid">
+							<img id="img-projects" src="https://miro.medium.com/v2/resize:fit:1400/1*ZxDLf4f2JZaRjQfPl_9COQ.png" height="400" width="400" class="img-fluid">
 						</div>
 						<div class="d-flex justify-content-center align-items-center">
 							<p>In eCommerce API we secure method of communication among applications within an eCommerce platform, and between eCommerce platforms and other integrated systems. Inline with this we allow one application, like an eCommerce platform, to expose services to other applications. These services can include catalog content, order management, pricing information, and customer data. As developers we create and publish APIs to help connect online traders and shoppers through websites and platforms, playing a pivotal role in converting data into useful business information and integrating with other services for ease-of-use. </p>		
@@ -98,7 +103,7 @@
 				</div>
 		</div>
 
-		<div id="title-tools" class="p-5"><h2><u>Tools</u></h2></div>
+		<div id="title-tools" class="p-5"><h2>Tools</h2></div>
 
 		<div id="tools" class="d-flex row  justify-content-center align-items-center p-5">
 			
@@ -156,26 +161,28 @@
 
 		<div class="container-fluid p-5"  id="contact">
 
-	          <h2 class="text-dark text-center">Contact Me</h2>
-
+	          <h2 class="text-light text-center">Contact Me</h2>
+	          <div id="fb" class="text-center">
+	          	<a href="https://www.facebook.com/eddmyconpeopo.bacotot"><img src="https://i.pinimg.com/564x/ec/81/69/ec8169fec55371f6824b8a0f3725c4b2.jpg" height="50" width="50"></a>
+	          	</div>
 	                    <div class="row mt-3 justify-content-center">
 	                        <div class="col-lg-4 col-md-8 col-12  " id="form-col">
 	                            <form class="p-3 rounded">
 	                                <div class="form-group">
-	                                    <label class="text-dark" for="name">Full Name:</label>
+	                                    <label class="text-light" for="name">Full Name:</label>
 	                                    <input type="text" class="form-control" id="name">
 	                                </div>
 	                                <div class="form-group">
-	                                    <label class="text-dark" for="email">Email address:</label>
+	                                    <label class="text-light" for="email">Email address:</label>
 	                                    <input type="email" class="form-control" id="email">
 	                                </div>
 	                                <div class="form-group">
-	                                    <label class="text-dark" for="contact">Complete Address:</label>
+	                                    <label class="text-light" for="Address">Complete Address:</label>
 	                                    <input type="text" class="form-control" id="address">
 	                                </div> 
 	                                <div class="form-group">
-	                                    <label class="text-dark" for="contact">Contact Number:</label>
-	                                    <input type="text" class="form-control" id="contact">
+	                                    <label class="text-light" for="contact">Contact Number:</label>
+	                                    <input type="text" class="form-control" id="number">
 	                                </div> 
 
 
