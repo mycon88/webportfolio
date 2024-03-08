@@ -1,218 +1,199 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./index.css">
-
-	<!-- Google Font Linking -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Glegoo&family=Manrope:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-		
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-	<title>Capstone 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
-	<!-- Navigator Bar -->
-	<header id="navbar">
-		
-			<ul class="d-flex flex-row justify-content-end p-3 mx-1">
-				<li class="mx-3"><a href="#landing">Home</a></li>
-				<li class="mx-3"><a href="#about-me">About Me</a></li>
-				<li class="mx-3"><a href="#projects">Projects</a></li>
-				<li class="mx-3"><a href="#tools">Tools</a></li>
-				<li class="mx-3"><a href="#contact">Contact</a></li>
-			</ul>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		    <i class="fa fa-bars"></i>
-		  	</a>	
-	  	
-	</header>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top"> 
+            <a class="navbar-brand ml-4" href="#">Edd Mycon</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#my-projects">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools">Tools</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-	<!-- Landing Page -->
-	<section class="container-fluid mx-1">
-		<div id="landing" class="d-flex row justify-content-center align-items-center text-white">
-			<div class="d-flex flex-column col-lg-6 col-sm-12 justify-content-center align-items-center col-12 text-center">
-				<h1>Edd Mycon Peopo E. Bacotot</h1>
-				<h3>BS in Computer Engineer</h3>
-				<h3>Full Stack Web Developer</h3>
-			</div>
-			<div  class="d-flex col-lg-6 col-12 col-md-12 justify-content-center align-items-center">
-				<div id="profile"><img src="./images/profile.jpg" height="200" width="200" class="img-fluid"></div>
-			</div>
-		</div>
+    <section class="container">
+        <!-- Front Page -->
+        <div class="row profile mt-5">
+            <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5 pt-5">
+                <h2>Edd Mycon Peopo E. Bacotot</h2>
+                <h3>Web Developer/Software Engineer</h3>
+                <h4>BS Computer Engineer</h4>
+                <div class="mt-5 mb-5">
+                    <h5>My Websites</h5>
+                    <button class="btn btn-sm mr-2 mb-4"><a href="https://mycon88.github.io/webportfolio/#landing" target="_blank">Portfolio</a></button>
+                    <button class="btn btn-sm mb-4"><a href="http://zuitt-bootcamp-prod-384-6769-bacotot.s3-website.us-east-1.amazonaws.com/" target="_blank">E Commerce</a></button>
+                </div>
+                <a href="#contact-me" id="contact-a" class="btn btn-primary mt-4 mb-4" role="button">Contact Me!</a>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                <img id="profile-image" src="./images/profile.jpg" class="img-fluid">
+            </div>
+        </div>
+        
+        <!-- About Me -->
+        <div id="about-me" class="mt-5">
+            <div class="row justify-content-center"> <!-- Center the content -->
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                    <div class="about-box p-4">
+                        <h1 class="text-center">About Me</h1>
+                        <p class="text-center">I am a skilled web developer with a strong background in web development, a strong front-end and back-end skills. I build, design, and maintain all websites and software applications. My skills include designing, writing, and editing website content, understanding UI, cross-browser compatibility, and general web functions and standards, HTML5, CSS3, JavaScript, ExpressJS, Sublime Text, ReactJS, GitHub, MongoDB, AWS, POSTMAN, and NodeJS. I am also familiar with popular frameworks such as Bootstrap and Figma.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- My Projects -->
+        <div id="my-projects" class="mt-5 text-center">
+            <h2 class="mb-4">My Projects</h2>
+            <div class="row justify-content-center"> <!-- Center the content -->
+                <!-- Frontend -->
+                <div class="col-lg-4 col-md-10 col-sm-12 frontend"> <!-- Adjust column size for smaller screens -->
+                    <h2 class="mt-5">Web page Designing (Front-End Programming)</h2>
+                    <p class="mt-5">I have developed a single-page portfolio that demonstrates my proficiency in web development using HTML5, CSS3, and Bootstrap. I ensured the user interface was designed to be accessible to users on laptops, tablets, and mobile devices. Additionally, I created a section devoted to showcasing my skills, projects, tools, and contact information. Finally, I deployed my portfolio for the world to see.</p>
+                </div>
+                <!-- Backend -->
+                <div class="col-lg-4 col-md-10 col-sm-12 backend"> <!-- Adjust column size for smaller screens -->
+                    <h2 class="mt-5">E-Commerce (Back-End Programming)</h2>
+                    <p class="mt-5">To build my e-commerce backend I took five steps to complete the process. I designed a database schema, implemented business logic, created APIs for front-end communications, and set up a server. These are the tools that I used in my backend, NodeJS, ExpressJS, JavaScript, and MongoDB. Here's an overview of the process. I installed MongoDB as my backend software. Then I design the database schema, including tables for products, users, orders, and carts. And then I set up user authentication and authorization to secure my application. This involves using JWT (JSON Web Tokens) and OAuth. And then I build APIs to create RESTful to expose background functionality. Then for the final step, I deployed my backend to a hosting environment such as AWS.</p>
+                </div>
+                <!-- Full-stack -->
+                <div class="col-lg-4 col-md-10 col-sm-12 fullstack"> <!-- Adjust column size for smaller screens -->
+                    <h2 class="mt-5">E-Commerce API (Full-Stack)</h2>
+                    <p class="mt-5">As a full-stack web developer, I initialized my ReactJS setup. I then designed a user interface that included components for product listing, product details, shopping cart, and checkout. Additionally, I implemented a React router to set up different pages. I used fetch libraries like Axios to retrieve the product data from the backend and displayed the product listings on the homepage. Next, I created a page or modal to display detailed information about each product. I then developed a checkout process that allowed users to enter shipping information, select payment methods, and place orders. Finally, I implemented user authentication.</p>
+                </div>
+            </div>
+        </div>
 
-	<!-- About ME -->
-		<div class="d-flex flex-row pt-5 text-center">
-				<div class="d-none d-lg-block d-md-none">
-					<img src="./images/about-me.webp">
-				</div>
-				<div class="flex-column col-lg-6 pt-5 col-12 col-md-12 m-4">
-					<div class="">
-						<h2 id="about-me">About Me</h2>
-					</div>
-					<div class="">
-						<p>I am a skilled web developer and have a strong background in web development, a strong skill as both a front-end and back-end. I build, design, and maintain all websites and software applications. My skills include designing, writing, and editing website content, understanding UI, cross-browser compatibility, and general web functions and standards, HTML5, CSS3, JavaScript, ExpressJS, Sublime Text, ReactJS, GitHub, MongoDB, AWS, POSTMAN, and NodeJS. I am also familiar with popular frameworks such as Bootstrap and Figma.</p>	
-					</div>
-				</div>
-			</div>				
-		</div>
+        <!-- Tools -->
+        <div id="tools" class="mt-5 text-center">
+            <h1 class="mt-5 mb-5">Tools</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <h2>Front-end</h2>
+                    <img src="./images/logo-html5.png">
+                    <img src="./images/logo-css3.png">
+                    <img src="./images/logo-bootstrap.png">
+                    <img src="./images/logo-sublime-text-3.png">
+                    <img src="./images/logo-git.png">
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h2>Backend</h2>
+                    <img src="./images/logo-postman.png">
+                    <img src="./images/logo-javascript.png">
+                    <img src="./images/logo-gitlab-ci-cd.png">
+                    <img src="./images/logo-heroku.png">
+                    <img src="./images/logo-sublime-text-3.png">
+                    <img src="./images/logo-mongodb.png">
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h2>Full-stack</h2>
+                    <img src="./images/logo-rest.png">
+                    <img src="./images/logo-react.png">
+                    <img src="./images/logo-nodejs.png">
+                    <img src="./images/logo-expressjs.png">
+                    <img src="./images/logo-sublime-text-3.png">
+                    <img src="./images/logo-javascript.png">
+                    <img src="./images/logo-mongodb.png">
+                    <img src="./images/logo-gitlab-ci-cd.png">
+                    <img src="./images/logo-bootstrap.png">
+                </div>
+            </div>
+        </div>
 
-		<!-- Projects -->
-		
-			<div id="title-projects" class="p-5 text-center"><h2>My Projects</h2></div>
-			
-		<div id="projects" class="d-flex row text-center">
-				<div class="border border-dark d-flex flex-column col-lg-4">				
-					<div class="d-flex justify-content-center align-items-center mt-4">
-						<h4>Web-page Designing (Front-End Programming)</h4>
-					</div>
-					<div class="d-flex justify-content-center m-4">
-						<img id="img-projects" src="https://t3.ftcdn.net/jpg/00/85/73/28/360_F_85732813_H42V97IazS9xQNfMPYrbk1fgQcg9l8rs.jpg" height="200" width="200" class="img-fluid">
-					</div>
-					<div class="d-flex justify-content-center">
-						<p>I have developed a single-page portfolio that demonstrates my proficiency in web development using HTML5, CSS3, and Bootstrap. I ensured that the user interface was designed to be accessible to users on laptops, tablets, and mobile devices. Additionally, I created a section devoted to showcasing my skills, projects, tools, and contact information. Finally, I deployed my portfolio for the world to see.</p>
-					</div>
-				</div>
+        <!-- Contact Info -->
+        <div id="contact-me" class="mt-5 text-center">
+            <h2>Contact Me</h2>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="contact-box">
+                        <h2>Message Me!</h2>
+                        <form action="YOUR_SERVER_SCRIPT_URL_HERE" method="POST">
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" required><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required><br>
+                            <label for="number">Phone Number:</label><br>
+                            <input type="tel" id="number" name="number" required><br><br>
+                            <label for="comment">Comment:</label><br>
+                            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+                            <input class="bg-primary p-1" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact">
+                        <img class="info mr-4" src="./images/gmail.png">
+                        <p>eddmyconpeopoenterinabacotot@gmail.com</p>
+                    </div>
+                    <div class="contact">
+                        <img class="info mr-4" src="./images/phone.png">
+                        <p>+639171067869</p>
+                    </div>
+                    <div class="contact">
+                        <img class="info mr-4" src="./images/logo-place.jpg">
+                        <p>Purok 17A Pala-o, Iligan City, Lanao Del Norte</p>
+                    </div>
+                    <img id="map" src="./images/place.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="modalDiv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thank you for your response.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-dark text-center">
+                    Success!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-				<div class="border border-dark d-flex flex-column col-lg-4">
-					<div class="d-flex justify-content-center mt-4">
-						<h4>E-Commerce (Back-End Programming)</h4>
-					</div>
-					<div class="d-flex justify-content-center m-4">
-						<img id="img-projects" src="https://img.freepik.com/premium-vector/abstract-modern-ecommerce-logo-design-colorful-gradient-happy-shopping-logo-template_467913-990.jpg" class="img-fluid" height="150" width="150">
-					</div>
-					<div class="d-flex justify-content-center">
-						<p>To build my e-commerce backend I took five steps to complete the process. I designed a database schema, implemented business logic, created APIs for front-end communications, and set up a server. These are the tools that I used in my backend, NodeJS, ExpressJS, JavaScript, and MongoDB. Here's an overview of the process. I installed MongoDB as my backend software. Then I design the database schema, including tables for products, users, orders, and carts. And then I set up user authentication and authorization to secure my application. This involves using JWT (JSON Web Tokens) and OAuth. And then I build APIs to create RESTful to expose background functionality. Then for the final step, I deployed my backend to a hosting environment such as AWS.</p>
-					</div>
-				</div>
-					<div class="border border-dark d-flex flex-column col-lg-4">
-						<div class="d-flex justify-content-center mt-4">
-							<h4>E-Commerce API (Full-Stack)</h4>
-						</div>
-						<div class="d-flex justify-content-center m-4">
-							<img id="img-projects" src="https://miro.medium.com/v2/resize:fit:1400/1*ZxDLf4f2JZaRjQfPl_9COQ.png" height="200" width="200" class="img-fluid">
-						</div>
-						<div class="d-flex justify-content-center">
-							<p>As a full-stack web developer, I began my ReactJS setup by initializing it. I then designed a user interface that included components for product listing, product details, shopping cart, and checkout. Additionally, I implemented a React router to set up different pages. I used fetch libraries like Axios to retrieve the product data from the backend and displayed the product listings on the homepage. Next, I created a page or modal to display detailed information about each product. I then developed a checkout process that allowed users to enter shipping information, select payment methods, and place orders. Finally, I implemented user authentication.</p>		
-						</div>			
-				</div>
-		</div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-		<div id="title-tools" class="p-5"><h2>Tools</h2></div>
-
-		<div id="tools" class="d-flex row  justify-content-center align-items-center p-5">
-			
-				
-				<div class="d-flex flex-column col-lg-4 justify-content-center">
-					<div class="d-flex justify-content-center">
-						<h2>Frontend</h2>
-					</div>
-					<div class="d-flex justify-content-center">
-						<img width="150" src="./images/logo-html5.png" height="100" width="150" class="img fluid">
-					</div>
-					<div class="d-flex justify-content-center">
-						<img width="150" src="./images/logo-css3.png" height="100" width="150" class="img fluid">
-						<img width="150" src="./images/logo-bootstrap.png" height="50" width="150" class="img fluid">
-						<img width="150" src="./images/logo-git.png" height="100" width="150" class="img fluid">
-					</div>
-					<div class="d-flex justify-content-center">						
-						<img width="150" src="./images/logo-gitlab-ci-cd.png" height="100" width="150" class="img fluid">
-						<img width="150" src="./images/logo-sublime-text-3.png" height="100" width="150" class="img fluid">
-					</div>
-				</div>
-
-				
-				<div class="d-flex flex-column col-lg-4 align-items-center justify-content-center  align-items-center">
-					<div class="d-flex justify-content-center">
-						<h2>Mern</h2>
-					</div>
-					<div class="d-flex justify-content-center">
-						<img src="./images/logo-mongodb.png" height="50" width="150" class="img-fluid">
-						<img src="./images/logo-expressjs.png" height="50" width="150" class="img-fluid">
-					</div>
-					<div class="d-flex justify-content-center">					
-						<img src="./images/logo-react.png" height="50" width="150" class="img-fluid">
-						<img src="./images/logo-nodejs.png" height="50" width="150" class="img-fluid">
-					</div>
-				</div>
-
-				
-				
-					<div class="d-flex flex-column col-lg-4 justify-content-center">
-						<div class="d-flex justify-content-center">
-							<h2>Other Tools</h2>
-						</div>
-						<div class="d-flex justify-content-center">
-							<img src="./images/logo-heroku.png" height="50" width="150" class="img-fluid">
-							<img src="./images/logo-git.png" height="50" width="150" class="img-fluid">
-						</div>
-						<div class="d-flex justify-content-center">
-							<img src="./images/logo-sublime-text-3.png" height="50" width="150" class="img-fluid">
-							<img src="./images/logo-postman.png" height="50" width="150" class="img-fluid">
-						</div>
-					</div>			
-			
-		</div>	
-
-		<div class="container-fluid p-5"  id="contact">
-
-	          <h2 class="text-light text-center">Contact Me</h2>
-	          <div id="fb" class="text-center">
-	          	<a href="https://www.facebook.com/eddmyconpeopo.bacotot"><img src="https://i.pinimg.com/564x/ec/81/69/ec8169fec55371f6824b8a0f3725c4b2.jpg" height="50" width="50"></a>
-	          	</div>
-	                    <div class="row mt-3 justify-content-center">
-	                        <div class="col-lg-4 col-md-8 col-12  " id="form-col">
-	                            <form class="p-3 rounded">
-	                                <div class="form-group">
-	                                    <label class="text-light" for="name">Full Name:</label>
-	                                    <input type="text" class="form-control" id="name">
-	                                </div>
-	                                <div class="form-group">
-	                                    <label class="text-light" for="email">Email address:</label>
-	                                    <input type="email" class="form-control" id="email">
-	                                </div>	                                
-	                                <div class="form-group">
-	                                    <label class="text-light" for="contact">Contact Number:</label>
-	                                    <input type="text" class="form-control" id="number">
-	                                </div> 
-
-
-	                                
-	                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDiv">Send Email</button>
-	                            </form>
-	                        </div>
-	                    </div>
-
-	                </div>
-	               
-
-	                
-	                <div class="modal fade" id="modalDiv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	                    <div class="modal-dialog">
-	                        <div class="modal-content">
-	                            <div class="modal-header">
-	                                <h5 class="modal-title" id="exampleModalLabel">Thank you for your response.
-	                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	                                  <span aria-hidden="true">&times;</span>
-	                              </button>
-	                          </div>
-	                          <div class="modal-body text-dark text-center">
-	                            Success!
-	                        </div>
-	                        <div class="modal-footer">
-	                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-	                        </div>
-	                    </div>
-	                </div>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+        
+        $(document).ready(function() {
+            // Intercept the form submission
+            $('form').submit(function(event) {
+      
+                $('#modalDiv').modal('show');
+            });
+        });
+    </script>
 </body>
 </html>
