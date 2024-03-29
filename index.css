@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+  /* Adjust the size of the hamburger button */
+  .navbar-toggler {
+    width: 60px; /* Set the desired width */
+    height: 60px; /* Set the desired height */
+    padding: 10px; /* Adjust padding to center the icon within the button */
+    background-color: transparent; /* Ensure the button background is transparent */
+    border: none; /* Remove any border */
+  }
 
 .navbar-list {
     list-style: none;
@@ -46,7 +54,9 @@ nav {
     align-items: center;
     text-align: center;
 }
-
+body {
+    background-color: dimgray;
+}
 button {
     cursor: pointer;
     border: 1px solid #3498db;
